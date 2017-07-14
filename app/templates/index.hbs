@@ -4,7 +4,7 @@
   <div>
     <ol>
       {{#each model as |board|}}
-        {{boards-tile board=board deleteRecord='deleteRecord'}}
+        {{boards-tile board=board editTile='editTile' deleteRecord='deleteRecord'}}
       {{/each}}
     </ol>
     {{new-query saveQuery1='saveQuery2'}}

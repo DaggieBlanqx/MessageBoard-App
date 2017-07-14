@@ -1,0 +1,23 @@
+{{#if editForm}}
+<div>
+<form>
+  <div class="form-group">
+    <label for="author">Author</label>
+    {{input value=author id="author" size="40"}}
+  </div>
+
+  <div class="form-group">
+    <label for="question">Question</label>
+    {{input value=question id="question" size="40"}}
+  </div>
+
+  <div class="form-group">
+    <label for="description">Description</label>
+    {{input value=description id="description" size="40"}}
+  </div>
+<button {{action 'edit' board}}>Save</button>
+</form>
+</div>
+{{else}}
+<button {{action 'updateQuestion'}}>Update Question</button>
+{{/if}}

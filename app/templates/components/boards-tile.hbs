@@ -6,8 +6,8 @@
    Author:{{board.author}}<br>
    Question:{{board.question}}<br>
    Description:{{board.description}}<br>
-   <button {{action 'hide'}}>Hide</button>
-    <button {{action 'delete' board}}>Delete Query</button>
+   <button {{action 'hide'}}>Hide</button>{{edit-query board=board edit='edit'}}
+   <button {{action 'delete' board}}>Delete Query</button>   
  </div><br>
 {{else}}
 
