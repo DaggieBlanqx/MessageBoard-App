@@ -5,9 +5,15 @@ export default Ember.Component.extend({
   actions :{
     giveQuery(){
       this.set('addNewQuery',true)
-    }
-    saveQuery(params){
-
+    },
+    saveQuery(){
+      var params={
+      author: this.get('author'),
+      question: this.get('question'),
+      description: this.get('description')
+      };
+      this.set('addNewQuery',false);
+      this.sendAction('saveQuery1',params)
     }
   }
 });
