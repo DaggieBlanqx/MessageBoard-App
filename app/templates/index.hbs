@@ -1,0 +1,11 @@
+<div>
+  <h1>Messages</h1>
+  <p>This is a message board where a user gets to ask questions and receive answers from the various authors.</p>
+  <div>
+    <ol>
+      {{#each model as |board|}}
+        {{boards-tile board=board deleteRecord='deleteRecord'}}
+      {{/each}}
+    </ol>
+  </div>
+</div>

@@ -1,0 +1,20 @@
+{"boards": [{
+  "author": "Andrea",
+  "question": "How has Moringa been for you?",
+  "description": "Opinion on school."
+}, {
+  "author": "Alex",
+  "question": "What is the work of a TM",
+  "description": "job description"
+},
+{
+  "author": "Jane",
+  "question": "Where is the Empire State Building?",
+  "description": "geography"
+},
+{
+  "author": "Vince",
+  "question": "What constitutes a healthy diet?",
+  "description": "lifestyle choices"
+}]
+}

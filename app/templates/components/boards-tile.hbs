@@ -1,0 +1,14 @@
+ <li>
+    <a href="#" {{action 'showBoard'}}><h3>{{board.author}}'s question on {{board.description}}</h3></a>
+</li>
+ {{#if showLink}}
+ <div>
+   Author:{{board.author}}<br>
+   Question:{{board.question}}<br>
+   Description:{{board.description}}<br>
+   <button {{action 'hide'}}>Hide</button>
+    <button {{action 'delete' board}}>Delete Query</button>
+ </div><br>
+{{else}}
+
+{{/if}}
