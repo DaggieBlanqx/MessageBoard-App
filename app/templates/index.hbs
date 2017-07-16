@@ -3,7 +3,7 @@
   <p>This is a message board where a user gets to ask questions and receive answers from the various authors.</p>
   <div>
     <ol>
-      {{#each model as |board|}}
+      {{#each model.questions as |board|}}
         {{boards-tile board=board}}
       {{/each}}
     </ol>
