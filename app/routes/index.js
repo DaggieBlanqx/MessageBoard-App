@@ -13,10 +13,5 @@ export default Ember.Route.extend({
       nwQuestion.save();
       this.transitionTo('index');
     },
-    saveAnswer(params) {
-  var newResponse = this.store.createRecord('answer', params);
-  newResponse.save();
-  this.transitionTo('index');
-}
   }
 });

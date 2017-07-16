@@ -5,19 +5,18 @@
     <ol>
       {{#each model.questions as |board|}}
         {{boards-tile board=board}}
+      {{/each}}
       {{#each model.answers as |answer|}}
         <li>{{answer.author}} : {{answer.response}}</li>
       {{/each}}
-      {{/each}}
-
     </ol>
 
     {{new-query saveQuery1='saveQuery2'}}
-
+    
   </div>
 </div>
 
-{{new-answer saveAnswer="saveAnswer"}}
+
 
 {{#link-to 'about'}}About{{/link-to}}
 {{#link-to 'contact'}}Click here to contact us.{{/link-to}}

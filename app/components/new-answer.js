@@ -10,6 +10,7 @@ actions: {
    var params = {
      author: this.get('author'),
      response: this.get('response'),
+     board: this.get('board')
    };
    this.set('addNewAnswer', false);
    this.sendAction('saveAnswer', params);

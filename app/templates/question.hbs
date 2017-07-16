@@ -1,6 +1,8 @@
 <h4>Here are some of the questions that people are asking e.g {{model.author}}:{{model.question}}</h4>
 <h4>Our site aims at helping people by answering all their questions in an understanding manner</h4>
 
+{{new-answer saveAnswer="saveAnswer" board=model}}
+
 {{board-detail board=model deleteRecord="deleteRecord"}}
 
 {{edit-query board=model editTile="editTile"}}

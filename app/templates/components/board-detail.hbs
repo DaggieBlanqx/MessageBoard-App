@@ -1,2 +1,7 @@
 <li>{{board.author}}:{{board.question}}</li>
 <button {{action 'delete' board}}>Delete Query</button>
+<ul>
+  {{#each answer.response as |review|}}
+    {{boards-tile board=board}}
+  {{/each}}
+</ul>
