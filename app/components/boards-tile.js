@@ -8,14 +8,6 @@ export default Ember.Component.extend({
   },
     hide(){
       this.set('showLink',false);
-    },
-    edit(board,params){
-      this.sendAction('editTile',board,params)
-    },
-    delete(board){
-      if(confirm('Confirm you want to delete?')){
-       this.sendAction('deleteRecord', board);
-    }
     }
   }
 

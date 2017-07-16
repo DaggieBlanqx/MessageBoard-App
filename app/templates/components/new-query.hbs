@@ -4,19 +4,19 @@
     <form>
       <div class="form-group">
         <label for="author">Author</label>
-        {{input value=author id="author" size="40"}}
+        {{input value=author id="author" size="60"}}
       </div>
       <div class="form-group">
         <label for="question">Question</label>
-        {{input value=question id="content" size="40"}}
+        {{input value=question id="content" size="60"}}
       </div>
       <div class="form-group">
         <label for="description">Description</label>
-        {{input value=description id="rating" size="40"}}
+        {{input value=description id="rating" size="60"}}
       </div>
       <button {{action 'saveQuery'}}>Save</button>
     </form>
   </div>
   {{else}}
-  <button{{action 'giveQuery'}}>New Question</button>
+  <button{{action 'giveQuery'}}>What do you want to Know?</button>
 {{/if}}

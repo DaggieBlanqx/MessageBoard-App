@@ -14,7 +14,7 @@ export default Ember.Component.extend({
          description: this.get('description')
          };
          this.set('editForm',false);
-         this.sendAction('editQuery',params,board);
+         this.sendAction('editTile',params,board);
        }
    }
 });

@@ -4,9 +4,12 @@
   <div>
     <ol>
       {{#each model as |board|}}
-        {{boards-tile board=board editTile='editTile' deleteRecord='deleteRecord'}}
+        {{boards-tile board=board}}
       {{/each}}
     </ol>
     {{new-query saveQuery1='saveQuery2'}}
   </div>
 </div>
+
+{{#link-to 'about'}}About{{/link-to}}
+{{#link-to 'contact'}}Click here to contact us.{{/link-to}}

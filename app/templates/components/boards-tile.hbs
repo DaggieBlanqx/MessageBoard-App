@@ -1,13 +1,12 @@
- <li>
-    <a href="#" {{action 'showBoard'}}><h3>{{board.author}}'s question on {{board.description}}</h3></a>
-</li>
+
+<a href="#" {{action 'showBoard'}}> {{#link-to 'question' board.id}}<h3>{{board.author}}'s question on {{board.description}}</h3>{{/link-to}}</a>
+
  {{#if showLink}}
  <div>
    Author:{{board.author}}<br>
    Question:{{board.question}}<br>
    Description:{{board.description}}<br>
-   <button {{action 'hide'}}>Hide</button>{{edit-query board=board edit='edit'}}
-   <button {{action 'delete' board}}>Delete Query</button>   
+   <button {{action 'hide'}}>Hide</button>
  </div><br>
 {{else}}
 
