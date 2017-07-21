@@ -9,6 +9,6 @@ export default Ember.Component.extend({
   },
     destroyAnswer(answer){
       this.sendAction('destroyAnswer',answer)
-    }
+    },
   }
 });

@@ -10,7 +10,7 @@ export function questionPopularity(params) {
     return Ember.String.htmlSafe('<p>People really want to know about this topic</p>');
   }
   else{
-    return Ember.String.htmlSafe('<p>People really dont care about this topic</p>')
+    return Ember.String.htmlSafe('<p>People really dont care about this topic</p>');
   }
 }
 

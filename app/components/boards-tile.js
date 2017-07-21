@@ -1,6 +1,7 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
+  favoriteQuestion :Ember.inject.service(),
   showLink:false,
   actions: {
     showBoard(){
@@ -8,6 +9,9 @@ export default Ember.Component.extend({
   },
     hide(){
       this.set('showLink',false);
+    },
+    addQuestion(question){
+    this.get('favoriteQuestion').add(question);  
     }
   }
 

@@ -1,5 +1,6 @@
 {{#link-to 'question' board.id}}
 <a href="#" {{action 'showBoard'}}><h3>{{board.author}}  : {{board.question}}</h3></a>{{/link-to}}
+<button {{action "addQuestion" board }}>Add To List</button> <!--this button activates a service to add questions to a favorite list-->
 
  {{#if showLink}}
  <div>
