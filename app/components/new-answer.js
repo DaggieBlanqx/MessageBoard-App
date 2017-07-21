@@ -3,10 +3,10 @@ import Ember from 'ember';
 export default Ember.Component.extend({
   addNewAnswer: false,
 actions: {
-  giveAnswer() {
+  giveAnswer(){
     this.set('addNewAnswer', true);
   },
-  saveAnswer() {
+  saveAnswer(){
    var params = {
      author: this.get('author'),
      response: this.get('response'),

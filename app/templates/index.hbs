@@ -6,16 +6,22 @@
       {{#each model.questions as |board|}}
         {{boards-tile board=board}}
       {{/each}}
-      {{#each model.answers as |answer|}}
-        <li>{{answer.author}} : {{answer.response}}</li>
-      {{/each}}
     </ol>
 
-    {{new-query saveQuery1='saveQuery2'}}
-    
+    {{new-query saveQuery1="saveQuery2"}}
+
   </div>
 </div>
 
+<h3>Answers</h3>
+
+  <div>
+    <ol>
+        {{#each model.answers  as |answer|}}
+        <li>{{answer.author}}: {{answer.response}}</li>
+        {{/each}}      
+  </ol>
+  </div>
 
 
 {{#link-to 'about'}}About{{/link-to}}
