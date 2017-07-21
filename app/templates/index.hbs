@@ -4,7 +4,7 @@
   <div>
     <ol>
       {{#each model.questions as |board|}}
-        {{boards-tile board=board}}
+        {{boards-tile board=board}} {{question-popularity board}}
       {{/each}}
     </ol>
 
@@ -19,7 +19,7 @@
     <ol>
         {{#each model.answers  as |answer|}}
         <li>{{answer.author}}: {{answer.response}}</li>
-        {{/each}}      
+        {{/each}}
   </ol>
   </div>
 
