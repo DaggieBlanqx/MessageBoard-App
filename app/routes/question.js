@@ -34,6 +34,13 @@ export default Ember.Route.extend({
     },
     destroyAnswer(answer) {
       answer.destroyRecord();
+    },
+    like(answer){
+      var currentLikes=answer.get('likes');
+      var totalLikes=currentLikes + totalLikes;
+      answer.setProperties({likes: totalLikes});
+      answer.save();
+
     }
   }
 });

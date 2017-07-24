@@ -10,5 +10,8 @@ export default Ember.Component.extend({
     destroyAnswer(answer){
       this.sendAction('destroyAnswer',answer)
     },
+    like(answer){
+      this.sendAction('like',answer);
+    }
   }
 });
